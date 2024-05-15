@@ -1,0 +1,197 @@
+body {
+    background-color: rgba(231, 238, 246, 1);
+    font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 100;
+  font-style: normal
+}
+
+.container {
+    display: grid;
+    max-width: 375px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 520px 300px 300px;
+    grid-template-areas: 
+    "daniel"
+    "jonathan"
+    "jeanette"
+    "patrick"
+    "kira"
+    ;
+  
+}
+
+.container > div {
+    
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+
+   
+    
+}
+
+
+/* -----------------------------------------------------------daniel */
+
+
+.daniel {
+    grid-area: daniel;
+    background-color:rgba(115, 63, 200, 1);
+    background-image: url(./images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: 90% 5%;
+    background-size: 30%;
+    color: white;
+    padding: 25px;
+
+}
+
+.parrafoUno {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.tituloDaniel {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: -85px;
+
+}
+span{
+    margin-top: -20px;
+}
+.imgDaniel {
+    border-radius: 50%;
+}
+/* ---------------------------------------------------------jonathan */
+
+
+
+.jonathan {
+    grid-area: jonathan;
+    background-color: rgba(73, 85, 107, 1);
+    color: white;
+    padding: 25px;
+
+}
+
+.tituloJon{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: -85px;
+
+}
+span{
+    margin-top: -20px;
+}
+.imgJon {
+    border-radius: 50%;
+}
+
+
+
+
+/* ---------------------------------------------------JEANETE */
+
+.jeanette {
+    grid-area: jeanette;
+    background-color:  rgba(255, 255, 255, 1);
+    color: white;
+    padding: 40px;
+
+}
+
+.tituloJean{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: -85px;
+
+}
+span{
+    margin-top: -20px;
+}
+.imgJean {
+    border-radius: 50%;
+}
+
+.jeanette > div {
+    color: black;
+}
+
+.jeanette .parrafoUno {
+    margin-top: 30px;
+}
+
+
+
+
+/* --------------------------------------------------PATRICK */
+
+
+
+
+
+
+.patrick {
+    grid-area: patrick;
+    background-color: rgba(24, 32, 45, 1);
+    color: white;
+    padding: 40px;
+}
+
+.tituloPatrick{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: -85px;
+
+}
+
+.imgPatrick {
+    border-radius: 50%;
+}
+
+
+
+/* ----------------------------------KIRA */
+
+
+.kira { 
+    grid-area: kira ;
+    background-color: rgba(254, 254, 252, 1);
+    color: rgb(2, 2, 2);
+    padding: 40px;
+}
+
+.tituloKira{
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: -85px;
+
+}
+
+.imgKira {
+    border-radius: 50%;
+}
+
+/* ---------------------MEDIA */
+
+@media ( width > 500px) {
+
+    .container {
+        display: grid;
+        max-width: 100vw;
+        grid-template-columns: repeat( 4, 1fr);
+        grid-template-rows: repeat( 2, 1fr);
+        grid-template-areas: 
+        "daniel   daniel  jonathan kira"
+        "jeanette patrick patrick  kira"
+        ;
+       gap: 10px;
+    }
+
+}
